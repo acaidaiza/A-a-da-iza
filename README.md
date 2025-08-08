@@ -1,21 +1,3 @@
-/* Cardápio em React (single-file). Use este componente como página independente em um projeto React (Next.js, Vite, Create React App). Instruções rápidas:
-
-Para ver localmente: crie um app com npm create vite@latest my-menu --template react ou npx create-next-app@latest, cole este arquivo como src/App.jsx (ou pages/index.jsx no Next).
-
-Deploy rápido: Vercel/Netlify — basta apontar o repositório.
-
-Personalize os itens no array menuSections abaixo.
-
-
-Observações:
-
-Usa classes Tailwind. Se não tiver Tailwind, substitua por sua própria CSS ou adicione Tailwind ao projeto.
-
-Imagens usam placeholders; troque por URLs reais. */
-
-
-import React from 'react';
-
 const menuSections = [ { id: 'entradas', title: 'Entradas', items: [ { name: 'Coxinha (3 un.)', desc: 'Massa crocante e recheio cremoso de frango.', price: 'R$ 12,00' }, { name: 'Bolinho de queijo (4 un.)', desc: 'Queijo derretido e fritura dourada.', price: 'R$ 14,00' } ] }, { id: 'principais', title: 'Pratos Principais', items: [ { name: 'X-salada completo', desc: 'Pão artesanal, carne 150g, queijo, alface e tomate.', price: 'R$ 24,00' }, { name: 'Estrogonofe de frango', desc: 'Arroz branco e batata palha inclusos.', price: 'R$ 28,00' } ] }, { id: 'bebidas', title: 'Bebidas', items: [ { name: 'Refrigerante 350ml', desc: 'Lata gelada.', price: 'R$ 6,00' }, { name: 'Suco natural 300ml', desc: 'Feito na hora.', price: 'R$ 8,00' } ] }, { id: 'sobremesas', title: 'Sobremesas', items: [ { name: 'Brigadeiro de colher', desc: 'Doce tradicional.', price: 'R$ 6,00' }, { name: 'Pudim da casa', desc: 'Pudim cremoso com calda de caramelo.', price: 'R$ 10,00' } ] } ];
 
 export default function CardapioSite() { return ( <div className="min-h-screen bg-gray-50 text-gray-900"> <header className="bg-white shadow"> <div className="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between"> <div className="flex items-center gap-4"> <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center font-bold text-white">C</div> <div> <h1 className="text-2xl font-extrabold">Cardápio — Casa do Sabor</h1> <p className="text-sm text-gray-500">Comida afetiva, feita com carinho</p> </div> </div>
